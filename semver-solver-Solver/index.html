@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://ponylang.github.io/semver/semver--index/">
+        <link rel="canonical" href="https://ponylang.github.io/semver/semver-solver-Solver/">
       
       
       
@@ -38,7 +38,7 @@
     
     
       
-        <title>Package - semver</title>
+        <title>Solver - semver</title>
       
     
     
@@ -72,7 +72,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#semver-package" tabindex="1" class="md-skip">
+      <a href="#solver" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -98,7 +98,7 @@
                 semver
               </span>
               <span class="md-header-nav__topic">
-                Package
+                Solver
               </span>
             
           
@@ -179,12 +179,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
     <label class="md-nav__link" for="nav-2">
       package semver
@@ -200,20 +198,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="Package" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../semver--index/" title="Package" class="md-nav__link">
       Package
     </a>
-    
   </li>
 
         
@@ -241,6 +230,87 @@
   
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        
+          <li class="md-nav__item">
+    <a href="#constructors" title="Constructors" class="md-nav__link">
+    Constructors
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          
+            <li class="md-nav__item">
+    <a href="#create" title="create" class="md-nav__link">
+    create
+  </a>
+  
+</li>
+          
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      
+        
+          <li class="md-nav__item">
+    <a href="#public-fields" title="Public fields" class="md-nav__link">
+    Public fields
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          
+            <li class="md-nav__item">
+    <a href="#let-source-artifactsource-ref" title="let source: ArtifactSource ref" class="md-nav__link">
+    let source: ArtifactSource ref
+  </a>
+  
+</li>
+          
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      
+        
+          <li class="md-nav__item">
+    <a href="#public-functions" title="Public Functions" class="md-nav__link">
+    Public Functions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          
+            <li class="md-nav__item">
+    <a href="#solve" title="solve" class="md-nav__link">
+    solve
+  </a>
+  
+</li>
+          
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -252,8 +322,46 @@
               
                 
                 
-                <h1 id="semver-package">Semver package<a class="headerlink" href="#semver-package" title="Permanent link">&para;</a></h1>
-<p>A semantic versioning library and constraints solver for Ponylang heavily inspired by <a href="https://github.com/blang/semver">blang/semver</a>.</p>
+                <h1 id="solver">Solver<a class="headerlink" href="#solver" title="Permanent link">&para;</a></h1>
+<p><span class="source-link"><a href="src/semver-solver/solver.md#L4">[Source]</a></span></p>
+<pre><code class="language-pony">class ref Solver
+</code></pre>
+<h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permanent link">&para;</a></h2>
+<h3 id="create">create<a class="headerlink" href="#create" title="Permanent link">&para;</a></h3>
+<p><span class="source-link"><a href="src/semver-solver/solver.md#L7">[Source]</a></span></p>
+<pre><code class="language-pony">new ref create(
+  source': ArtifactSource ref)
+: Solver ref^
+</code></pre>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h4>
+<ul>
+<li>source': <a href="../semver-solver-ArtifactSource/">ArtifactSource</a> ref</li>
+</ul>
+<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="./">Solver</a> ref^</li>
+</ul>
+<hr />
+<h2 id="public-fields">Public fields<a class="headerlink" href="#public-fields" title="Permanent link">&para;</a></h2>
+<h3 id="let-source-artifactsource-ref">let source: <a href="../semver-solver-ArtifactSource/">ArtifactSource</a> ref<a class="headerlink" href="#let-source-artifactsource-ref" title="Permanent link">&para;</a></h3>
+<p><span class="source-link"><a href="src/semver-solver/solver.md#L5">[Source]</a></span></p>
+<hr />
+<h2 id="public-functions">Public Functions<a class="headerlink" href="#public-functions" title="Permanent link">&para;</a></h2>
+<h3 id="solve">solve<a class="headerlink" href="#solve" title="Permanent link">&para;</a></h3>
+<p><span class="source-link"><a href="src/semver-solver/solver.md#L10">[Source]</a></span></p>
+<pre><code class="language-pony">fun ref solve(
+  constraints: Iterator[Constraint ref] ref)
+: Result ref
+</code></pre>
+<h4 id="parameters_1">Parameters<a class="headerlink" href="#parameters_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>constraints: <a href="https://stdlib.ponylang.io/builtin-Iterator/">Iterator</a>[<a href="../semver-solver-Constraint/">Constraint</a> ref] ref</li>
+</ul>
+<h4 id="returns_1">Returns<a class="headerlink" href="#returns_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="../semver-solver-Result/">Result</a> ref</li>
+</ul>
+<hr />
                 
                   
                 
@@ -270,27 +378,6 @@
       
         
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid">
-        
-          <a href=".." title="semver" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-            </div>
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                semver
-              </span>
-            </div>
-          </a>
-        
-        
-      </nav>
-    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
